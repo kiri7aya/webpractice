@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-center mb-4">JavaScript Practice Tasks</h1>
+
+        <!-- Task 1: Average Marks -->
+        <div class="mb-4">
+            <h3>Task 1: Compute Average Marks</h3>
+            <p>Marks of the following students:</p>
+            <ul id="studentMarksList"></ul>
+            <button class="btn btn-primary" onclick="computeAverage()">Compute Average</button>
+            <p id="averageResult" class="mt-2"></p>
+        </div>
+
+        <!-- Task 2: Keydown Event Listener -->
+        <div class="mb-4">
+            <h3>Task 2: Keydown Event Listener</h3>
+            <input type="text" id="textInput" class="form-control" placeholder="Press Enter here">
+        </div>
+
+        <!-- Task 3: Double Click Event -->
+        <div class="mb-4">
+            <h3>Task 3: Double Click Event</h3>
+            <button id="doubleClickBtn" class="btn btn-secondary">Double Click Me</button>
+            <p id="doubleClickResult" class="mt-2"></p>
+        </div>
+
+        <!-- Task 4: Progress Bar -->
+        <div class="mb-4">
+            <h3>Task 4: Progress Bar</h3>
+            <button class="btn btn-success" onclick="updateProgress()">Update Progress</button>
+            <div class="progress mt-2">
+                <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+            </div>
+        </div>
+
+        <!-- Task 5: FizzBuzz -->
+        <div class="mb-4">
+            <h3>Task 5: FizzBuzz</h3>
+            <button class="btn btn-info" onclick="runFizzBuzz()">Run FizzBuzz</button>
+            <div id="fizzBuzzResult" class="mt-2"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link to JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
